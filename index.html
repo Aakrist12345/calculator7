@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculate Me!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utils.css" />
+</head>
+<body>
+  <main>
+    <h1 class="text-center">Calc-crafters <span class="brand">Calculate for you</span></h1>
+
+    <section class="container flex flex-col items-center mx-auto">
+      <input type="text" id="display" class="input" placeholder="0" readonly />
+
+      <!-- Basic buttons -->
+      <div class="row">
+        <button class="button orange" id="clear">C</button>
+        <button class="button orange" id="modulo">%</button>
+        <button class="button pink" id="memory-add">M+</button>
+        <button class="button pink" id="memory-sub">M-</button>
+      </div>
+
+      <!-- Math ops -->
+      <div class="row">
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button operator">*</button>
+      </div>
+      <div class="row">
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button operator">/</button>
+      </div>
+      <div class="row">
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button operator">+</button>
+      </div>
+      <div class="row">
+        <button class="button">0</button>
+        <button class="button">.</button>
+        <button class="button green" id="equals">=</button>
+        <button class="button operator">-</button>
+      </div>
+
+      <!-- Extra Features -->
+      <h2>Advanced Functions</h2>
+      <div class="row">
+        <button class="button" onclick="sqrt()">√</button>
+        <button class="button" onclick="power()">xʸ</button>
+        <button class="button" onclick="bmi()">BMI</button>
+        <button class="button" onclick="toPercent()">%</button>
+      </div>
+
+      <h2>Unit Conversions</h2>
+      <div class="row">
+        <button class="button" onclick="convertInches()">In ➝ Cm</button>
+        <button class="button" onclick="convertTemp()">°C ➝ °F</button>
+        <button class="button" onclick="convertDays()">Days ➝ Min</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
